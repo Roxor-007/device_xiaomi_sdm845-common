@@ -41,6 +41,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/xiaomi/mi845_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := weebx
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-weebx
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
